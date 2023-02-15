@@ -7,7 +7,7 @@ Display.innerHTML = "0";
 
 function Press() {
   if (Display.innerHTML == "0") {
-    Display.innerHTML = "";
+    Display.innerHTML = "" ;
   }
 
   let Key = this.innerHTML;
