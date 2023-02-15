@@ -6,12 +6,16 @@ Display = Display[0];
 Display.innerHTML = "0";
 
 function Press() {
+  if (Display.innerHTML == "0") {
+    Display.innerHTML = "";
+  }
+
   let Key = this.innerHTML;
   if (Key == '=') {
     Display.innerHTML = eval(Display.innerHTML);
   }
   else if (Key == 'C')
-    Display.innerHTML = "";
+    Display.innerHTML = "0";
   else {
     Display.innerHTML = Display.innerHTML + Key;
   }
